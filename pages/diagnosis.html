@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagnosis</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.css.map">
     <link rel="stylesheet" href="/css/diag.css">
 </head>
    <div class="jumbtron jumbotron-fluid">
@@ -26,7 +27,7 @@
                         Press <a href="">Here</a> to continue.
     
                     </p>
-                    <form action="">
+                    <form id= "diseases" onsubmit="return is_checked()">
                         <div class="syphili">
                             A rash on your reproductive organs <input type="checkbox" name="symptoms" value="syphilis" id="rash"> <br>
                             Fever and fatigue <input type="checkbox" name="symptoms" value="syphilis" id="fever"> <br>
@@ -38,6 +39,8 @@
                             Pain or discomfort during sex or urination.<input type="checkbox" name="symptoms" value="chlymydia" id="pain-sex"> <br>
                             Green or yellow discharge from the penis or vagina.<input type="checkbox" name="symptoms" value="chlymydia" id="green-yellow"> <br>
                             Pain in the lower abdomen.<input type="checkbox" name="symptoms" value="chlymydia" id="lower-pain">
+                            Bleeding between periods. <input type="checkbox" name="symptoms" value="chlymydia" id="bleeding">
+                            Swollen or tender testicles.<input type="checkbox" name="symptoms" value="chlymydia" id="testicles">
                         </div>
                         <div class="gonorrhea">
                             A white, yellow, beige, or green-colored discharge from the penis or vagina.<input type="checkbox" name="symptoms" value="gonorrhea" id="yello-discharge"> <br>
@@ -45,13 +48,10 @@
                             More frequent urination than usual.<input type="checkbox" name="symptoms" value="gonorrhea" id="urinating-unusal"> <br>
                             Itching around the genitals.<input type="checkbox" name="symptoms" value="gonorrhea" id="itching"> <br>
                             Sore throat.<input type="checkbox" name="symptoms" value="gonorrhea" id="sore-throat"> <br>
-
-                            <input type="submit" name="" id="" value="submit">
-
-
+                            <button>submit</button>
                         </div>
-                    </form>
-                     
+                    </form> 
+                
                 </div>
             </div>
         </div>

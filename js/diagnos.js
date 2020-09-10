@@ -1,34 +1,62 @@
-const diseases = {
-  Syphilis: [
-    "A rash on your reproductive organs",
-    "Fatigue",
-    "Fever",
-    "Weight Loss",
-    "Hair loss",
-    "Joint pain",
-  ],
-
-  Chlymydia: [
-    "pain or discomfort during sex or urination",
-    "green or yellow discharge from the penis or vagina",
-    "pain in the lower abdomen",
-  ],
-
-  Gonorrhea: [
-    "a white, yellow, beige, or green-colored discharge from the penis or vagina",
-    "pain or discomfort during sex or urination",
-    "more frequent urination than usual",
-    "itching around the genitals",
-    "sore throat",
-  ],
-};
+var metrix= 0;
 
 function is_checked(){
-  var SyphilisA =document.getElementById('rash').checked;
-  var SyphilisB =document.getElementById('fever').checked;
-  var SyphilisC =document.getElementById('Weight-loss').checked;
-  var SyphilisD =document.getElementById('hair-loss').checked;
-  var SyphilisE =document.getElementById('joint-pain').checked;
+  var syphilisA =document.getElementById('rash').checked;
+  var syphilisB =document.getElementById('fever').checked;
+  var syphilisC =document.getElementById('Weight-loss').checked;
+  var syphilisD =document.getElementById('hair-loss').checked;
+  var syphilisE =document.getElementById('joint-pain').checked;
+
+  var chlymydiaA =document.getElementById('pain-sex')
+  var chlymydiaB =document.getElementById('green-yellow')
+  var chlymydiaC =document.getElementById('lower-pain')
+  var chlymydiaD =document.getElementById('bleeding')
+  var chlymydiaE=document.getElementById('testicles')
 
 
+  var gonorrheaA = document.getElementById('yello-discharge');
+  var gonorrheaB = document.getElementById('pain-urinating');
+  var gonorrheaC = document.getElementById('urinating-unusal');
+  var gonorrheaD = document.getElementById('itching');
+  var gonorrheaE = document.getElementById('sore-throat');
+
+  var newSyphilis = [syphilisA, syphilisB, syphilisC, syphilisD, syphilisE];
+  var newChlymydia = [chlymydiaA, chlymydiaB, chlymydiaC, chlymydiaD, chlymydiaE];
+  var newGono =[gonorrheaA, gonorrheaB,gonorrheaC, gonorrheaD, gonorrheaE];
+  
+
+
+  newSyphilis.forEach(function(symp){
+    for(i=0;i< newSyphilis.length; i ++); 
+    if( symp == true){
+      metrix +=1;
+    }
+    else{
+      return false;
+    }
+    alert('You have ' + metrix + ' symptom(s) for syphilis')
+  })
+
+  newChlymydia.forEach(function(symptom){
+    for(i=0;i< newChlymydia.length; i ++); 
+    if( symp == true){
+      metrix +=1;
+    }
+    else{
+      return false;
+    }
+    alert('You have ' + metrix + ' symptom(s) for Chlymydia')
+  })
+
+  newGono.forEach(function(sympp){
+    for(i=0;i< newGono.length; i ++); 
+    if( symp == true){
+      metrix +=1;
+    }
+    else{
+      return false;
+    }
+    alert('You have ' + metrix + ' symptom(s) for Gono')
+  })
+  
 }
