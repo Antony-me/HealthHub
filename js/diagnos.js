@@ -1,8 +1,3 @@
-const _prompt = require("readline").createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
 const diseases = {
   Syphilis: [
     "A rash on your reproductive organs",
@@ -27,3 +22,13 @@ const diseases = {
     "sore throat",
   ],
 };
+
+function is_checked(){
+  var SyphilisA =document.getElementById('rash').checked;
+  var SyphilisB =document.getElementById('fever').checked;
+  var SyphilisC =document.getElementById('Weight-loss').checked;
+  var SyphilisD =document.getElementById('hair-loss').checked;
+  var SyphilisE =document.getElementById('joint-pain').checked;
+
+
+}
