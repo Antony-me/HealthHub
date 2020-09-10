@@ -53,4 +53,7 @@ nav ul{
 }
 a{
     color: red;
+    text-size-adjust: 30;
+    text-align: center;
+    text-decoration: underline color rgb(0, 0, 0);
 }
