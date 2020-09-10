@@ -1,6 +1,6 @@
 body{
     background-color: lightskyblue;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-left: 30px;
     font-size: 18px;
 }
@@ -20,4 +20,42 @@ p button{
     background-color: black;
     color: white;
     padding-left: 200px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+
+nav ul{
+    display: flex;
+
+}
+.logo{
+    display: flex;
+    height: 150px;
+    width: 150px;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 50px;
+}
+.nav-items li a{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+}
+.context{
+    padding-top: 30px;
+    font-size: 20px;
+}
+.navigation{
+    height: 150px;
+    background-color: white;
 }
