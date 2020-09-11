@@ -10,6 +10,10 @@ img{
 
 nav{
     display: flex;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     justify-content: space-around;
     align-items: center;
     background-color: white;
@@ -36,6 +40,35 @@ nav .logo img{
 }
 .navlinks li{
     list-style: none;
+<<<<<<< HEAD
+=======
+
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+
+nav ul{
+    display: flex;
+
+}
+.logo{
+    display: flex;
+    height: 150px;
+    width: 150px;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 50px;
+}
+.nav-items li a{
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+master
+>>>>>>> origin/master
 }
 
 .context{
@@ -54,7 +87,12 @@ nav .logo img{
     padding-left: 200px;
 }
 a{
+<<<<<<< HEAD
     /* color: red; */
+=======
+
+    color: red
+>>>>>>> origin/master
     text-size-adjust: 30;
     text-align: center;
     text-decoration: underline color rgb(0, 0, 0);
