@@ -1,6 +1,7 @@
 var metrixSy= 0;
-var metrixCly = 0;
-var metrixGono = 0;
+var metrixCly = 1;
+var metrixGono = 2;
+ 
 
 function is_checked(){
   var syphilisA =document.getElementById('rash').checked;
@@ -59,6 +60,5 @@ function is_checked(){
       return false;
     }
   })  
-  alert( '  You have ' + metrixCly + ' symptom(s) for Gonorrhea ... ');
-
+  alert( '  You have ' + metrixGono + ' symptom(s) for Gonorrhea ... ');
 }

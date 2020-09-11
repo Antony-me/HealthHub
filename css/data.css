@@ -10,6 +10,34 @@ img{
 
 nav{
     display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 150px;
+}
+nav .logo img{
+    height: 150px;
+    width: 150px;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.navlinks :hover{
+    background-color: yellow;
+}
+.navlinks a{
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Roboto' sans-serif;
+}
+.navlinks li{
+    list-style: none;
+
     align-items: center;
     justify-content: space-between;
     height: 20px;
@@ -34,6 +62,7 @@ nav ul{
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     text-decoration: none;
+master
 }
 
 .context{
@@ -52,7 +81,8 @@ nav ul{
     padding-left: 200px;
 }
 a{
-    color: red;
+
+    color: red
     text-size-adjust: 30;
     text-align: center;
     text-decoration: underline color rgb(0, 0, 0);
