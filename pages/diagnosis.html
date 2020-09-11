@@ -9,39 +9,38 @@
     <link rel="stylesheet" href="/css/diag.css">
 </head>
 <header>
-     
-</header>
-   <div class="jumbtron jumbotron-fluid">
-    <nav class="navigation">
+    <nav>
         <div class="logo">
-          <img src="./Rectangle 1 (2).png" alt="logo">
+            <img src="/images/logo.png" alt="">
         </div>
-        <div class="nav-items">
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#">STI & STD INFORMATION</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </div>
-    </nav> 
-    <div class="container">
-        <h2>Welcome to Your personal Doctor</h2>
-        <p>We are here for you.</p>
-    </div>
-   </div>
-    
+        <ul class="navlinks">
+            <li>
+                <a href="">About Us</a>
+            </li>
+            <li>
+                <a href="/pages/diagnosis.html">The symptom Checker </a>
+            </li>
+            <li>
+                <a href="">STI information</a>
+            </li>
+            <li>
+                <a href="#HealthhubHome.html">login</a>
+            </li>
+        </ul>
+    </nav>
+</header>  
     <div class="container">
         <div jumbotron>
             <div class="card">
                 <div class="card-body">
                     <h3>
+                        Welcome to Your personal Doctor
                         Hi there and welcome to our online Diagnosis Application. <br>
                         We have a list of symptoms below, please check the ones you are experiencing.
-    
-                </h3>
+                    </h3>
+                    <em>
                     <form id= "diseases" onsubmit="return is_checked()">
-                        <div class="syphili">
+                        <div class="syphili"> 
                             A rash on your reproductive organs <input type="checkbox" name="symptoms" value="syphilis" id="rash"> <br>
                             Are you experiencing Fever and fatigue <input type="checkbox" name="symptoms" value="syphilis" id="fever"> <br>
                             Have you noticed Weight Loss <input type="checkbox" name="symptoms" value="syphilis" id="Weight-loss"> <br>
@@ -64,12 +63,13 @@
                             <button>submit</button>
                         </div>
                     </form> 
+                </em>
                 
                 </div>
             </div>
         </div>
     </div>
-    <!-- <footer>
+    <footer>
         <div class="footer" id="contact">
           <div class="row">
             <div class="col-md-6">
@@ -90,7 +90,7 @@
             </div>
           </div>
         </div>
-      </footer> -->
+      </footer> 
     <script src="../js/diagnos.js"></script>
 </body>
 </html>

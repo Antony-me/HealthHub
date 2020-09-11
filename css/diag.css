@@ -3,55 +3,55 @@ body{
     padding-top: 50px;
     font-size: 18px;
 }
-
 nav{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    height: 20px;
+    background-color: white;
+    height: 150px;
 }
-nav ul{
-    display: flex;
-}
-.logo{
-    display: flex;
+nav .logo img{
     height: 150px;
     width: 150px;
 }
-.nav-items li{
-    list-style: none;
-    margin-right: 50px;
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
 }
-.nav-items li a{
-    color: black;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
+.navlinks :hover{
+    background-color:yellow;
+}
+.navlinks a{
     text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Roboto' sans-serif;
 }
-/* 
-.context{
-    padding-top: 30px;
-    font-size: 20px;
+.navlinks li{
+    list-style: none;
 }
-.navigation{
-    height: 150px;
-    background-color: white;
+.jumbtron{
+    background-color: #aaa;
+    padding: 10%;
 }
+.jumbtron .card{
+    width: 100%;
+   
+}
+.card-body{
+    background-color: #eee;
+    padding: 10px;
+    margin: 2%;
+    
+}
+.card-body h3{
+    font-weight: 200;
+}
+
 .footer{
     background-color: black;
     color: white;
     padding-left: 200px;
-} */
-.jumbtron{
-    background-color: #aaa;
-    padding: 1%;
-}
-.jumbtron .card{
-    border: 2px solid chocolate;
-   
-}
-
-.card-body form{
-    margin: 2px;
-    border: 2px soilid red;
 }
