@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diagnosis</title>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/bootstrap.css.map">
+        <link rel="stylesheet" href="/css/diag.css">
+    </head>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <ul class="navlinks">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="/pages/diagnosis.html">The symptom Checker </a></li>
+                <li><a href="">STI information</a></li>
+                <li><a href="#HealthhubHome.html">login</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div jumbotron>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>
+                        Welcome to Your personal Doctor
+                        Hi there and welcome to our online Diagnosis Application. <br>
+                        We have a list of symptoms below, please check the ones you are experiencing.
+                        </h3>
+                        <em>
+                        <form id= "diseases" onsubmit="return is_checked()">
+                            <div class="syphili"> 
+                                A rash on your reproductive organs <input type="checkbox" name="symptoms" value="syphilis" id="rash"> <br>
+                                Are you experiencing Fever and fatigue <input type="checkbox" name="symptoms" value="syphilis" id="fever"> <br>
+                                Have you noticed Weight Loss <input type="checkbox" name="symptoms" value="syphilis" id="Weight-loss"> <br>
+                                Hair loss problems <input type="checkbox" name="symptoms" value="syphilis" id="hair-loss"> <br>
+                                Joint pain <input type="checkbox" name="symptoms" value="syphilis" id="joint-pain"> <br>
+                            </div>
+                            <div class="chlymydia">
+                            Pain or discomfort during sex or urination.<input type="checkbox" name="symptoms" value="chlymydia" id="pain-sex"> <br>
+                            Green or yellow discharge from the penis or vagina.<input type="checkbox" name="symptoms" value="chlymydia" id="green-yellow"> <br>
+                            Pain in the lower abdomen.<input type="checkbox" name="symptoms" value="chlymydia" id="lower-pain"> <br>
+                            Bleeding between periods. <input type="checkbox" name="symptoms" value="chlymydia" id="bleeding"> <br>
+                            Swollen or tender testicles.<input type="checkbox" name="symptoms" value="chlymydia" id="testicles"> <br>
+                            </div>
+                            <div class="gonorrhea">
+                            A white, yellow, beige, or green-colored discharge from the penis or vagina.<input type="checkbox" name="symptoms" value="gonorrhea" id="yello-discharge"> <br>
+                            Pain or discomfort during sex or urination.<input type="checkbox" name="symptoms" value="gonorrhea" id="pain-urinating"> <br>
+                            More frequent urination than usual.<input type="checkbox" name="symptoms" value="gonorrhea" id="urinating-unusal"> <br>
+                            Itching around the genitals.<input type="checkbox" name="symptoms" value="gonorrhea" id="itching"> <br>
+                            Sore throat.<input type="checkbox" name="symptoms" value="gonorrhea" id="sore-throat"> <br>
+                            <button>submit</button>
+                        </div>
+                    </form> 
+                </em>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer" id="contact">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Customer Service</h3>
+              <h3>Individual use support</h3>
+              <br>
+              <br>
+              <p>To reach customer support for individual subscribers:</p>
+              <p>Please contact healthdatahub@gmail.com</p>
+            </div>
+            <div class="col-md-6">
+              <h3>Quality control</h3>
+              <br>
+              <br>
+              <br>
+              <p>For questions on the quality of the result:</p>
+              <p>Please contact healthdatahubquality@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </footer> 
+    <script src="../js/diagnos.js"></script>
+</body>
+</html>
