@@ -8,10 +8,26 @@
     <link rel="stylesheet" href="/css/bootstrap.css.map">
     <link rel="stylesheet" href="/css/diag.css">
 </head>
+<header>
+     
+</header>
    <div class="jumbtron jumbotron-fluid">
-       <div class="container">
-           <h2>Welcome to Your personal Doctor</h2>
-            <p>We are here for you.</p>
+    <nav class="navigation">
+        <div class="logo">
+          <img src="./Rectangle 1 (2).png" alt="logo">
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#">STI & STD INFORMATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+    </nav> 
+    <div class="container">
+        <h2>Welcome to Your personal Doctor</h2>
+        <p>We are here for you.</p>
     </div>
    </div>
     
@@ -19,28 +35,25 @@
         <div jumbotron>
             <div class="card">
                 <div class="card-body">
-                    <p>
+                    <h3>
                         Hi there and welcome to our online Diagnosis Application. <br>
-                        We are going to ask you a few questions about how you are feeling and we <br>
-                        Expect honesty and openess. Whatever you are going to answer will be confidential <br>
-                        And will only be used by You and your doctor.
-                        Press <a href="">Here</a> to continue.
+                        We have a list of symptoms below, please check the ones you are experiencing.
     
-                    </p>
+                </h3>
                     <form id= "diseases" onsubmit="return is_checked()">
                         <div class="syphili">
                             A rash on your reproductive organs <input type="checkbox" name="symptoms" value="syphilis" id="rash"> <br>
-                            Fever and fatigue <input type="checkbox" name="symptoms" value="syphilis" id="fever"> <br>
-                            Weight Loss <input type="checkbox" name="symptoms" value="syphilis" id="Weight-loss"> <br>
-                            Hair loss <input type="checkbox" name="symptoms" value="syphilis" id="hair-loss"> <br>
-                            Joint pain <input type="checkbox" name="symptoms" value="syphilis" id="joint-pain">
+                            Are you experiencing Fever and fatigue <input type="checkbox" name="symptoms" value="syphilis" id="fever"> <br>
+                            Have you noticed Weight Loss <input type="checkbox" name="symptoms" value="syphilis" id="Weight-loss"> <br>
+                            Hair loss problems <input type="checkbox" name="symptoms" value="syphilis" id="hair-loss"> <br>
+                            Joint pain <input type="checkbox" name="symptoms" value="syphilis" id="joint-pain"> <br>
                         </div>
                         <div class="chlymydia">
                             Pain or discomfort during sex or urination.<input type="checkbox" name="symptoms" value="chlymydia" id="pain-sex"> <br>
                             Green or yellow discharge from the penis or vagina.<input type="checkbox" name="symptoms" value="chlymydia" id="green-yellow"> <br>
-                            Pain in the lower abdomen.<input type="checkbox" name="symptoms" value="chlymydia" id="lower-pain">
-                            Bleeding between periods. <input type="checkbox" name="symptoms" value="chlymydia" id="bleeding">
-                            Swollen or tender testicles.<input type="checkbox" name="symptoms" value="chlymydia" id="testicles">
+                            Pain in the lower abdomen.<input type="checkbox" name="symptoms" value="chlymydia" id="lower-pain"> <br>
+                            Bleeding between periods. <input type="checkbox" name="symptoms" value="chlymydia" id="bleeding"> <br>
+                            Swollen or tender testicles.<input type="checkbox" name="symptoms" value="chlymydia" id="testicles"> <br>
                         </div>
                         <div class="gonorrhea">
                             A white, yellow, beige, or green-colored discharge from the penis or vagina.<input type="checkbox" name="symptoms" value="gonorrhea" id="yello-discharge"> <br>
@@ -56,6 +69,28 @@
             </div>
         </div>
     </div>
+    <!-- <footer>
+        <div class="footer" id="contact">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Customer Service</h3>
+              <h3>Individual use support</h3>
+              <br>
+              <br>
+              <p>To reach customer support for individual subscribers:</p>
+              <p>Please contact healthdatahub@gmail.com</p>
+            </div>
+            <div class="col-md-6">
+              <h3>Quality control</h3>
+              <br>
+              <br>
+              <br>
+              <p>For questions on the quality of the result:</p>
+              <p>Please contact healthdatahubquality@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </footer> -->
     <script src="../js/diagnos.js"></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
-var metrix= 0;
+var metrixSy= 0;
+var metrixCly = 1;
+var metrixGono = 2;
 
 function is_checked(){
   var syphilisA =document.getElementById('rash').checked;
@@ -23,40 +25,18 @@ function is_checked(){
   var newSyphilis = [syphilisA, syphilisB, syphilisC, syphilisD, syphilisE];
   var newChlymydia = [chlymydiaA, chlymydiaB, chlymydiaC, chlymydiaD, chlymydiaE];
   var newGono =[gonorrheaA, gonorrheaB,gonorrheaC, gonorrheaD, gonorrheaE];
+
+  var newDisease = [newSyphilis, newChlymydia, newGono];
   
 
-
-  newSyphilis.forEach(function(symp){
-    for(i=0;i< newSyphilis.length; i ++); 
+  newDisease[0].forEach(function(symp){
+    for(i=0;i< 5; i ++); 
     if( symp == true){
-      metrix +=1;
+      metrixSy +=1;
     }
     else{
       return false;
     }
-    alert('You have ' + metrix + ' symptom(s) for syphilis')
-  })
-
-  newChlymydia.forEach(function(symptom){
-    for(i=0;i< newChlymydia.length; i ++); 
-    if( symp == true){
-      metrix +=1;
-    }
-    else{
-      return false;
-    }
-    alert('You have ' + metrix + ' symptom(s) for Chlymydia')
-  })
-
-  newGono.forEach(function(sympp){
-    for(i=0;i< newGono.length; i ++); 
-    if( symp == true){
-      metrix +=1;
-    }
-    else{
-      return false;
-    }
-    alert('You have ' + metrix + ' symptom(s) for Gono')
-  })
-  
+  })  
+  alert('You have ' + metrixSy + ' symptom(s) for Syphilis.. ' + '  You have ' + metrixCly + ' symptom(s) for Chlymydia... ' + '  You have'  + metrixGono +  ' symptom(s) for Gono');
 }
